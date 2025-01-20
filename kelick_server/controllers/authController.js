@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken";
 
 const prisma = new PrismaClient();
 
-const JWT_SECRET = "your_jwt_secret";
+const JWT_SECRET = "supersecretkey";
 
 export const signup = async (req, res) => {
   const { email, password } = req.body;

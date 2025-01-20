@@ -98,3 +98,49 @@
 {"level":"info","message":"Cache hit for userId: 11","timestamp":"2025-01-20T10:57:08.960Z"}
 {"level":"info","message":"Cache hit for userId: 11","timestamp":"2025-01-20T10:57:14.073Z"}
 {"level":"info","message":"Cache hit for userId: 11","timestamp":"2025-01-20T10:57:14.912Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:10:49.903Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:11:38.713Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:11:38.733Z"}
+{"level":"info","message":"Job completed: 1","timestamp":"2025-01-20T11:11:38.736Z"}
+{"level":"info","message":"Tax data cached for userId: 11","timestamp":"2025-01-20T11:14:16.459Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:15:35.297Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:15:35.320Z"}
+{"level":"info","message":"Job completed: 2","timestamp":"2025-01-20T11:15:35.322Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:17:30.788Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:17:30.811Z"}
+{"level":"info","message":"Job completed: 3","timestamp":"2025-01-20T11:17:30.813Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:18:32.363Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:18:32.382Z"}
+{"level":"info","message":"Job completed: 4","timestamp":"2025-01-20T11:18:32.386Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:20:08.147Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:20:08.169Z"}
+{"level":"info","message":"Job completed: 5","timestamp":"2025-01-20T11:20:08.171Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:20:42.754Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:20:42.775Z"}
+{"level":"info","message":"Job completed: 6","timestamp":"2025-01-20T11:20:42.777Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:21:31.737Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:21:31.754Z"}
+{"level":"info","message":"Job completed: 7","timestamp":"2025-01-20T11:21:31.756Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:22:16.487Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:22:16.513Z"}
+{"level":"info","message":"Job completed: 8","timestamp":"2025-01-20T11:22:16.515Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:22:26.918Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:22:26.934Z"}
+{"level":"info","message":"Job completed: 9","timestamp":"2025-01-20T11:22:26.935Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:22:55.931Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:22:55.950Z"}
+{"level":"info","message":"Job completed: 10","timestamp":"2025-01-20T11:22:55.952Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:23:23.474Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:23:23.490Z"}
+{"level":"info","message":"Job completed: 11","timestamp":"2025-01-20T11:23:23.493Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:23:25.768Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:23:25.785Z"}
+{"level":"info","message":"Job completed: 12","timestamp":"2025-01-20T11:23:25.787Z"}
+{"level":"info","message":"Server is running on http://localhost:4000","timestamp":"2025-01-20T11:23:40.999Z"}
+{"level":"info","message":"Processing tax data sync job for userId: 123","timestamp":"2025-01-20T11:23:41.017Z"}
+{"level":"info","message":"Job completed: 13","timestamp":"2025-01-20T11:23:41.020Z"}
+{"level":"info","message":"Cache hit for userId: 11","timestamp":"2025-01-20T11:24:19.129Z"}
+{"level":"info","message":"Cache hit for userId: 11","timestamp":"2025-01-20T11:24:23.140Z"}
+{"level":"info","message":"Cache hit for userId: 11","timestamp":"2025-01-20T11:24:24.563Z"}
+{"level":"info","message":"Cache hit for userId: 11","timestamp":"2025-01-20T11:24:25.191Z"}
+{"level":"info","message":"Cache hit for userId: 11","timestamp":"2025-01-20T11:24:25.943Z"}
