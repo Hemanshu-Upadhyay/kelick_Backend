@@ -39,3 +39,165 @@ This Assigment is submitted as proof of concept as part of submission of Fronten
 - Node.js (version 14 or higher)
 - Redis
 - PostgreSQL
+
+### Steps to Set Up
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/Hemanshu-Upadhyay/kelick_Backend.git
+   cd kelick_Backend
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   npm install in both folders
+   ```
+
+3. **Set up environment variables**:
+   Create a `.env` file in the root directory and add the following variables:
+
+   ```bash
+   DATABASE_URL=postgres://username:password@localhost:5432/tax_data_db
+   IRAS_API_URL=http://localhost:6000/iras
+   JWT_SECRET=your_jwt_secret
+   REDIS_HOST=localhost
+   REDIS_PORT=6379
+   ```
+
+4. **Start Redis**:
+   Ensure Redis is running:
+
+   ```bash
+   redis-server
+   ```
+
+5. **Start the server**:
+   ```bash
+   npm start
+   ```
+
+---
+
+## API Endpoints
+
+### 1. **POST auth/signup**
+
+- **Request**:
+  ```json
+  {
+    "email": "user@example.com",
+    "password": "securepassword"
+  }
+  ```
+- **Response**:
+  ```json
+  {
+    "token":"your token"
+  }
+  ```
+
+### 2. **POST auth/login**
+
+- **Request**:
+  ```json
+  {
+    "email": "user@example.com",
+    "password": "securepassword"
+  }
+  ```
+- **Response**:
+  ```json
+   {
+    "token":"your token"
+  }
+  ```
+
+### 3. **GET /tax-data/:userId**
+
+- **Request**: Requires a valid JWT token in the `Authorization` header.
+  ```bash
+  curl -H "Authorization: Bearer jwt_token_here" http://localhost:4000/tax-data/123
+  ```
+- **Response**:
+  ```json
+  {
+
+    "id": 11,
+    "employeeName": "John Doe",
+    "taxYear": "2024",
+    "taxableIncome": 50000,
+    "taxAmount": 5000
+  }
+  ```
+
+### 4. **POST /iras (Mock IRAS API)**
+
+- **Request**: Sent by the service to fetch data from the external IRAS API (hosted on a different server).
+  ```bash
+  curl -X POST  http://localhost:6000/iras
+  ```
+- **Response**:
+  ```json
+  {
+    "employeeName": "John Doe",
+    "taxYear": "2024",
+    "taxableIncome": 50000,
+    "taxAmount": 5000
+  }
+  ```
+
+---
+
+## Project Structure
+
+```
+├── config/
+│   ├── prismaClient.js       # Prisma client setup for PostgreSQL
+│   ├── redisClient.js        # Redis client setup
+│   └── logger.js             # Logger setup
+├── controllers/              # Controller files for handling requests
+│   ├── authController.js     # Authentication logic (signup, login)
+│   └── taxDataController.js  # Tax data fetching logic with Redis caching
+├── services/                 # External services like IRAS API
+│   └── irasService.js        # Service to interact with the mock IRAS API
+├── routes/                   # Route definitions
+│   ├── authRoutes.js         # Routes for authentication
+│   └── taxDataRoutes.js      # Routes for fetching tax data
+├── middlewares/              # Middlewares for rate limiting and authentication
+│   ├── authMiddleware.js     # JWT authentication middleware
+│   ├── rateLimiterMiddleware.js  # Rate limiting middleware
+│   └── cacheMiddleware.js    # Cache validation middleware
+├── jobs/                     # Background jobs (e.g., tax data processor)
+│   └── taxDataJobProcessor.js # Job processor logic
+├── .env                      # Environment variables
+├── package.json              # Project dependencies and scripts
+└── server.js                 # Main entry point to start the server
+```
+
+---
+
+## Testing
+
+To test the application:
+
+1. **Run Unit Tests**:
+   Ensure you have unit tests set up (if you have any). You can run tests using a testing framework like Jest or Mocha.
+
+2. **Test API Endpoints**:
+   - Use Postman or CURL to test the API endpoints.
+   - Test login and signup first to ensure authentication is working.
+   - Test the `/tax-data/:userId` endpoint to confirm Redis caching is functioning as expected.
+
+---
+
+## Troubleshooting
+
+- **Redis Connection Issues**:
+  - Ensure Redis server is running and accessible. You can check Redis status using `redis-cli` and `ping` the server.
+- **JWT Token Errors**:
+  - Ensure you are passing the token correctly in the `Authorization` header of requests.
+  - Check for any errors related to invalid tokens in the response.
+
+---
