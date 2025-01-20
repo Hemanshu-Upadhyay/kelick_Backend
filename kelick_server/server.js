@@ -15,10 +15,8 @@ const app = express();
 app.use(bodyParser.json());
 app.use(rateLimiter);
 
-// Authentication routes for login and signup
-app.use("/auth", authRoutes); // Add the auth routes at the '/auth' endpoint
+app.use("/auth", authRoutes);
 
-// GraphQL setup with JWT authentication
 app.use(
   "/graphql",
   authenticate,
@@ -31,7 +29,6 @@ app.use(
 
 app.use("/tax-data", taxDataRoutes);
 
-// Background job processing
 taxDataJobProcessor();
 
 const PORT = process.env.PORT || 4000;
